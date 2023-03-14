@@ -1,28 +1,29 @@
 package Homework1;
+
 import java.util.Scanner;
 
 public class Task6 {
-    public void task6(){
+    public void weekDay() {
         int number;
 
         System.out.println("Please enter the number between 1 and 7: ");
         Scanner sc = new Scanner(System.in);
         number = sc.nextInt();
 
-        if (number <1 || number >7){
-                do {
-                    System.out.println("Please enter the valid number");
-                    number = sc.nextInt();
-                }
-                while (number <1 || number >7);
+        if (number < 1 || number > 7) {
+            do {
+                System.out.println("Please enter the valid number");
+                number = sc.nextInt();
+            }
+            while (number < 1 || number > 7);
 
 
         }
 
-        switch (number){
+        switch (number) {
             case 1:
                 System.out.println("1st day of week is Monday");
-                    break;
+                break;
             case 2:
                 System.out.println("2nd day of week is Tuesday");
                 break;

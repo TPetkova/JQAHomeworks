@@ -1,8 +1,9 @@
 package Homework1;
+
 import java.util.Scanner;
 
 public class Task3 {
-    public void task3(){
+    public void swapNumbers() {
         int numberOne, numberTwo, numberThree, swapNumber;
 
         Scanner sc = new Scanner(System.in);

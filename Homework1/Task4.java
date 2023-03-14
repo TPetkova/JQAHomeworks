@@ -1,8 +1,9 @@
 package Homework1;
+
 import java.util.Scanner;
 
 public class Task4 {
-    public void task4(){
+    public void WorkLifeBalance() {
         int workHours;
         double money;
         boolean dayOff;
@@ -14,19 +15,18 @@ public class Task4 {
         money = sc.nextDouble();
         dayOff = sc.nextBoolean();
 
-        if (dayOff == false){
+        if (dayOff == false) {
             System.out.println("I will go to work because it is not a day off");
         }
 
-        if (money > 0 && dayOff == true){
+        if (money > 0 && dayOff == true) {
             System.out.println("I will go to a movie");
 
-        }
-        else if (money <= 0) {
+        } else if (money <= 0) {
             System.out.println("I will stay home and watch tv");
         }
 
-        if (money < 10 && money > 0 && dayOff == true){
+        if (money < 10 && money > 0 && dayOff == true) {
             System.out.println("I will go for an ice cream");
 
         }

@@ -1,10 +1,10 @@
 package Homework1;
+
 import java.util.Scanner;
 
 public class Task1 {
-    public static void main(String args[])
-    {
-        //initialize the variables
+    public void checkThirdNumber() {
+        //create variables
         int numberOne;
         double numberTwo;
         int numberThree;
@@ -23,32 +23,36 @@ public class Task1 {
         System.out.println("Please enter one more integer number:");
         numberThree = sc.nextInt();
 
-        if ((numberThree>numberOne && numberThree<numberTwo) || (numberThree<numberOne && numberThree>numberTwo)) {
+        if ((numberThree > numberOne && numberThree < numberTwo) || (numberThree < numberOne && numberThree > numberTwo)) {
             System.out.println("Third number is  between the other numbers");
-        }
-        else{
+        } else {
             System.out.println("Third number is NOT between the other numbers");
         }
+    }
+
+    public static void main(String args[]) {
+        Task1 firstTaskObject = new Task1();
+        firstTaskObject.checkThirdNumber();
 
         Task2 secondTaskObject = new Task2();
-        secondTaskObject.task2();
+        secondTaskObject.swapAndSumNumbers();
 
         Task3 thirdTaskObject = new Task3();
-        thirdTaskObject.task3();
+        thirdTaskObject.swapNumbers();
 
         Task4 fourthTaskObject = new Task4();
-        fourthTaskObject.task4();
+        fourthTaskObject.WorkLifeBalance();
 
         Task5 fifthTaskObject = new Task5();
-        fifthTaskObject.task5();
+        fifthTaskObject.forTask();
 
         Task6 sixthTaskObject = new Task6();
-        sixthTaskObject.task6();
+        sixthTaskObject.weekDay();
 
         Task7 seventhTaskObject = new Task7();
-        seventhTaskObject.task7();
-        }
-
-
+        seventhTaskObject.continueTask();
     }
+
+
+}
 

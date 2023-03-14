@@ -1,13 +1,14 @@
 package Homework1;
+
 import java.util.Scanner;
 
 public class Task2 {
-    public void task2(){
+    public void swapAndSumNumbers() {
         double first;
         double second;
         int third;
         int fourth;
-        double number;
+        double numberDouble;
         int numberInt;
 
         //set values
@@ -21,9 +22,9 @@ public class Task2 {
         third = sc.nextInt();
         fourth = sc.nextInt();
 
-        number = first;
+        numberDouble = first;
         first = second;
-        second = number;
+        second = numberDouble;
 
         System.out.println("The swap double numbers are: " + first + " " + "and " + second);
 
@@ -34,19 +35,19 @@ public class Task2 {
         System.out.println("The swap int numbers are: " + third + " " + "and " + fourth);
 
         int castIntFirst = (int) first;
-        System.out.println("Double number first is " + first + " and it is casted to int " + castIntFirst);
+        System.out.println("Double numberDouble first is " + first + " and it is casted to int " + castIntFirst);
 
         int castIntSecond = (int) second;
-        System.out.println("Double number second is " + second + " and it is casted to int " + castIntSecond);
+        System.out.println("Double numberDouble second is " + second + " and it is casted to int " + castIntSecond);
 
         int sumInt = castIntFirst + castIntSecond + third + fourth;
         System.out.println("The sum of the integer numbers is: " + sumInt);
 
         double castDoubleThird = (double) third;
-        System.out.println("Integer number third is " + third + " and it is casted to double " + castDoubleThird);
+        System.out.println("Integer numberDouble third is " + third + " and it is casted to double " + castDoubleThird);
 
         double castDoubleFourth = (double) fourth;
-        System.out.println("Integer number fourth is " + fourth + " and it is casted to double " + castDoubleFourth);
+        System.out.println("Integer numberDouble fourth is " + fourth + " and it is casted to double " + castDoubleFourth);
 
         double sumDouble = castDoubleThird + castDoubleFourth + first + second;
         System.out.println("The sum of the double numbers is: " + sumDouble);
