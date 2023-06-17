@@ -4,7 +4,11 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class FirstTestCase extends BaseTest {
+public class FirstTestCase extends BaseTest_main {
+
+//    public FirstTestCase(WebDriver driver) {
+//        this.driver = driver;
+//    }
 
     @Test
     public void login() {
