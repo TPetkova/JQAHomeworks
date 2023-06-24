@@ -6,10 +6,6 @@ import org.openqa.selenium.WebElement;
 
 public class FirstTestCase extends BaseTest_main {
 
-//    public FirstTestCase(WebDriver driver) {
-//        this.driver = driver;
-//    }
-
     @Test
     public void login() {
         WebElement username = driver.findElement(By.id("user-name"));
