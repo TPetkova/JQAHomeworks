@@ -1,0 +1,27 @@
+Feature: Successful login and add a products in a cart using "https://www.saucedemo.com/" page
+
+In order to use the finctionalities of the website
+As a user
+I want to make a successful login and create a successful purchase
+
+Scenario: 1. Sucessful login of a user
+Given a user is on the "https://www.saucedemo.com/" page
+And the user enter a valid username "standard_user"
+And the user enter a valid password "secret_sauce"
+When the user clicks "Login" button
+Then the user is redirected to the Home page
+
+
+Scenario: 2. User selects product and add it to the cart
+Given a user is on the Home page
+And the user selects an item "Sauce Labs Onesie" from the products
+When the user clicks "Add to cart" button 
+Then the selected item is added to the cart
+
+Scenario: 3. User add a product to the cart
+Given a user is on the Home page
+When the user clicks "Add to cart" button of the product "Sauce Labs Backpack"
+Then the selected item is added to the cart
+
+Note: I will separate login functionality from a purchase and will create 2 feature files.
+
