@@ -37,8 +37,4 @@ public class LoginPage {
         setPassword(password);
         clickLoginButton();
     }
-
-    public String verifyLogin() {
-        return driver.getCurrentUrl();
-    }
 }
